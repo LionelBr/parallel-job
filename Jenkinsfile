@@ -1,12 +1,12 @@
 pipeline{
     agent any 
     stages{
-        stage(1-clone){
+        stage('1-clone'){
             steps{
                 sh 'cat /etc/passwd'
             }
         }
-        stage{2-parallel-jobs}{
+        stage('2-parallel-jobs'){
             parallel{
                 stage('1-subjob1'){
                     steps{
