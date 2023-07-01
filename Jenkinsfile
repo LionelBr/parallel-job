@@ -2,6 +2,9 @@ pipeline{
     agent{
         label 'slave1'
     } 
+    environment {
+        token 'Quoe4ieL eaThooZ1 Eipe2ohk Irierah5 zeeTaib9 Zei1oogh OoneiSa1 Iiweoph6'
+    }
     stages{
         stage('1-clone'){
             steps{
