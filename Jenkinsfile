@@ -5,8 +5,7 @@ pipeline{
     stages{
         stage('1-clone'){
             steps{
-               checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-creds', url: 'https://github.com/etechDevops/team4-parallel-job.git']])
-            }
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkins-id', url: 'https://github.com/LionelBr/parallel-job.git']])            }
         }
         stage('2-parallel-jobs'){
             parallel{
